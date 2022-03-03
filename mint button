@@ -1,0 +1,6 @@
+const submit = async () => {
+  if (!contract) return;
+
+  await contract.mint(userAddress, value);
+  alert("Transaction was sent in success🎉");
+ };
