@@ -1,0 +1,10 @@
+// Set your keys
+const DAPP_ID = "Your DApp ID";
+const API_KEY = "Your API Key";
+
+// Initialize SDK
+const handler = await bunzz.initializeHandler({
+  dappId: DAPP_ID,
+  apiKey: API_KEY,
+});
+const contract = await handler.getContract("Token (ERC20)");
